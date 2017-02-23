@@ -40,7 +40,7 @@ class DependencyWarner
     deprecation = eol_dates.deprecation(dependency)
     if deprecation && deprecation.warning?
       warning_message = "WARNING: #{deprecation.name} #{deprecation.version_line} will no longer be available in new buildpacks released after #{deprecation.date}"
-      puts warning_message
+      STDERR.puts warning_message
     end
   end
 
