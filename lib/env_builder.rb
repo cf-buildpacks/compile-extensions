@@ -28,6 +28,9 @@ class EnvBuilder
     end
   end
 
+  def copy_profile_d_scripts
+  end
+
   private
 
   def existing_sub_dirs(sub_dir_name)
